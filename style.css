@@ -1,0 +1,44 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.site-header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: blue;
+}
+
+.header-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.details
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.profile-form
+{
+    min-width: 400px;
+}
+
+.form-field
+{
+    display: flex;
+    margin-bottom: 10px
+}
+
+.form-input
+{
+    min-width: 150px;
+}
+
+#submit

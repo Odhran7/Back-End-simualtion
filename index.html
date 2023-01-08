@@ -4,19 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DID Simulation Using an On-Chain Resume</title>
 </head>
 <body>
-    <header>
-        <button id = 'connect-wallet'>
-              
-        </button>
+
+    <header class="site-header">
+        <h1 id="title">Please connect your wallet using an injected Metamask provider!</h1>
+        <div class="header-container">
+            <button id="connect-wallet">xcvxv</button>
+        </div>
     </header>
-    <h1>Please connect your wallet using an injected Metamask provider!</h1>
+
     <div class="details">
-        <p id="name"></p>
-        <p id="age"></p>
-        <p id="gender"></p>
+        <h2>Basic Profile</h2>
+        <p id="name">ddd</p>
+        <p id="country">ddd</p>
+        <p id="gender">dddd</p>
     </div>
+
+    <div class="profile-form">
+        <h2>Update Basic Profile using Ceramic: </h2>
+        <form id="profile-form">
+            <div class="form-field">
+                <label class="form-label" for="name">
+                    Name: 
+                </label>
+                <input class="form-input" type="text" id="name" placeholder="John Doe">
+            </div>
+            <div class="form-field">
+                <label class="form-label" for="country">
+                    Country: 
+                </label>
+                <input class="form-input" type="text" id="country" placeholder="Ireland">
+            </div>
+            <div class="form-field">
+                <label class="form-label" for="gender">
+                    Gender: 
+                </label>
+                <select class="form-input" id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <input class="form-input" type="submit" id="submit-btn" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="dist/bundle.js" type="module"></script>
 </body>
 </html>
