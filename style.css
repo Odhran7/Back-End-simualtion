@@ -62,3 +62,13 @@
 .ProfileData {
     font-weight: bold;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.studentButton
+{
+    border-radius: 15%;
+}
