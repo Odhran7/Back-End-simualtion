@@ -21,6 +21,10 @@
     profileName.innerHTML = "Name: "
     profileGender.innerHTML = "Gender: "
     profileCountry.innerHTML = "Country: "
+    profileStudent.innerHTML = "IsStudent: "
+    profileCollege.innerHTML = "College: "
+    profileCourse.innerHTML = "College Course: "
+    profileExperience.innerHTML = "Web3 Experience: "
 
     // create a new CeramicClient instance:
     const ceramic = new CeramicClient("https://ceramic-clay.3boxlabs.com")
