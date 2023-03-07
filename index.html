@@ -15,7 +15,7 @@
     <!-- create header with connect button -->
     <header class="SiteHeader">
         <div class="HeaderContainer">
-            <h1 id="pageTitle">Getting Start With Ceramic</h1>
+            <h1 id="pageTitle">Uniflux Interface</h1>
         </div>
         <div class="HeaderContainer">
             <button id="walletBtn"></button>
@@ -28,7 +28,7 @@
                 <div id="basicProfile">
                     <div class="BodyContainer">
                         <h2>Basic Profile</h2>
-                        <p>Read from Ceramic Datamodel</p>
+                        <p>Read from Uniflux Profile Datamodel</p>
                         <br>
                         <p class="ProfileData" id="profileName"></p>
                         <p class="ProfileData" id="profileGender"></p>
@@ -43,7 +43,7 @@
         </div>
         <div class="ProfileForm">
             <div class="BodyContainer">
-                <h2>Update Basic Profile on Ceramic</h2>
+                <h2>Update Basic Profile on Uniflux</h2>
                 <br>
                 <form id="profileForm">
                     <div class="formfield">
@@ -64,8 +64,8 @@
                         </select>
                     </div>
                     <div class="formfield">
-                        <label class="formLabel" for="Student">IsStudent:</label>
-                        <button class="studentButton" id="Student">Verify</button>
+                        <label class="formLabel" for="email">Student Email:</label>
+                        <input class="forminput" type="text" id="email" placeholder="Johndoe@tcd.ie">
                     </div>
                     <div class="formfield">
                         <label class="formLabel" for="college">College:</label>
@@ -86,7 +86,30 @@
                         </select>
                     </div>
                     <div class="formfield">
-                        <input class="forminput" type="submit" id="submitBtn" value="Submit">
+                        <input class="forminput" type="submit" id="submitBtn" value="Verify Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="profileForm">
+            <div class="BodyContainer">
+                <h2>Update Attestations</h2><br>
+                <form id='profileForm'>
+                    <div class="formfield">
+                        <label class="formLabel" for="name">Name:</label>
+                        <input class="forminput" type="text" id="name" placeholder="Solidity Course">
+                    </div>
+                    <div class="formfield">
+                        <label class="formLabel" for="description">Description:</label>
+                        <input class="forminput" type="text" id="description" placeholder="Beginner Solidity">
+                    </div>
+                    <div class="formfield">
+                        <label class="formLabel" for="image">Image:</label>
+                        <input class="forminput" type="file" id="image" placeholder="Solidity Course">
+                    </div>
+                    <div class="formfield">
+                        <input class="forminput" type="submit" id="submitBtn" value="Update">
                     </div>
                 </form>
             </div>
